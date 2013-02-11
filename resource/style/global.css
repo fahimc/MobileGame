@@ -54,3 +54,71 @@ background: linear-gradient(to bottom,  #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf0
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043',GradientType=0 ); /* IE6-8 */
 
 }
+#gameHolder
+{
+	width:90%;
+	height:80%;
+	margin-left: 5%;
+	margin-top: 20px;
+}
+#gameHolder .blockHolder
+{
+	width:33.3%;
+	height:33.3%;
+	float:left;
+}
+#gameHolder .clear
+{
+	clear: both;
+}
+#gameHolder .block
+{
+	position:relative;
+	width:90%;
+	height:90%;
+	border:5px solid #d2dbe6; 
+	-moz-border-radius: 1em;
+-webkit-border-radius: 1em;
+-khtml-border-radius: 1em;
+border-radius: 1em;
+background: #c8cbd1; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M4Y2JkMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYxJSIgc3RvcC1jb2xvcj0iI2U1ZTVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top,  #c8cbd1 0%, #e5e5e5 61%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c8cbd1), color-stop(61%,#e5e5e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #c8cbd1 0%,#e5e5e5 61%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #c8cbd1 0%,#e5e5e5 61%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #c8cbd1 0%,#e5e5e5 61%); /* IE10+ */
+background: linear-gradient(to bottom,  #c8cbd1 0%,#e5e5e5 61%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8cbd1', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+
+}
+#gameHolder .block.selected
+{
+	background: #f6c740;
+	border:5px solid #eca20a; 
+}
+#gameHolder .block .x
+{
+	text-align: center;
+	width:100%;
+	height:100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  position: absolute;
+}
+#gameHolder .block .o
+{
+	text-align: center;
+	width:100%;
+	height:100%;
+	 position: absolute;
+	 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}

@@ -8,5 +8,6 @@
 		<button classname="gameButton" text="PLAY" navigateTo="1"/>
 	</view>
 	<view classname="home">
+		<game id="gameHolder"/>
 	</view>
 </site>
