@@ -1,0 +1,12 @@
+<site>
+	<settings>
+		<title text="TeaBreak"/>
+		<content swipe="false" />
+	</settings>
+	<view classname="home">
+		<header text="Sudoku" />
+		<button classname="gameButton" text="PLAY" navigateTo="1"/>
+	</view>
+	<view classname="home">
+	</view>
+</site>
