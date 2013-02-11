@@ -63,5 +63,27 @@ var TicTac=
 		obj.style['-moz-opacity'] = value;
 		obj.style['-khtml-opacity'] = value;
 		obj.style['opacity'] = value;
+	},
+	destroy:function()
+	{
+		for (var a = 0; a < 9; a++) {
+			var holder = document.getElementById("block-"+a);
+			holder.className = holder.className.replace(" selected","");
+			var x = document.getElementById("x-"+a);	
+			var o = document.getElementById("o-"+a);	
+			TicTac.setOpacity(x,0);
+			TicTac.setOpacity(o,0);
+		}
+	},
+	onPageChange:function(index)
+	{
+		console.log(Spider.controller.currentIndex);
+		switch(Number(Spider.controller.currentIndex))
+		{
+			case 0:
+			console.log("here");
+				TicTac.destroy();
+			break;
+		}
 	}
 }
