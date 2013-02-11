@@ -3,12 +3,12 @@
 		<title text="TicTacToe"/>
 		<content swipe="false" />
 	</settings>
-	<view classname="home">
+	<view classname="home" scrollable="true">
 		<header src="resource/image/logo.png" />
 		<image src="resource/image/main.png" width="80%" height="60%" marginLeft="10%" marginRight="auto" />
 		<button classname="gameButton" text="PLAY" navigateTo="1"/>
 	</view>
-	<view classname="home">
+	<view classname="home"  scrollable="true">
 		<game id="gameHolder"/>
 		<button classname="gameButton" text="BACK" navigateTo="0"/>
 	</view>
